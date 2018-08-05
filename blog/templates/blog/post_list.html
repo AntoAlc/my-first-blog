@@ -1,24 +1,42 @@
+{% load staticfiles %}
 <html>
 	<head>
 		<title>AntoAlc's Blog</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+		<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+
 	</head>
+
 	<body>
-		<div>
+
+		<div class= "page-header">
+
 			<h1><a href="">AntoAlc's Blog</a></h1>
+
 		</div>
 
 		{{ posts }}
 	
+		<div class= "content container">
+			<div class="row">
+				<div class="col-md-8">
+					{% for post in posts %}
+						<div class= "post">
 
-		{% for post in posts %}
-			<div>
-				<p>publicado el 04 de Agosto de 2018, 17:41</p>
-				<h2><a href="">Mi segundo post</a></h2>
-				<p> segundo post </p>
+						<p>publicado el 04 de Agosto de 2018, 17:41</p>
+						<h2><a href="">Mi segundo post</a></h2>
+						<p> segundo post </p>
+						</div>
+					{% endfor %}
+				</div>
 			</div>
-		{% endfor %}
-		
-		<div>
+		</div>
+
+
+		<div class= "post">
 			<p>publicado el 04 de Agosto de 2018, 17:42</p>
 			<h2><a href="">Mi tercer post</a></h2>
 			<p> el tercero tambien funciona! </p>
