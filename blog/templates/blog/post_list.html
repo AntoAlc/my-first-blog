@@ -23,23 +23,24 @@
 		<div class= "content container">
 			<div class="row">
 				<div class="col-md-8">
+					
 					{% for post in posts %}
 						<div class= "post">
 
-						<p>publicado el 04 de Agosto de 2018, 17:41</p>
-						<h2><a href="">Mi segundo post</a></h2>
-						<p> segundo post </p>
+						<p>publicado el: {{post.published_date}}</p>
+						<h2><a href="">{{post.title}} </a></h2>
+						<p>{{ post.text|linebreaksbr}}</p>
 						</div>
 					{% endfor %}
+
+					<div class= "post">
+						<p>publicado el 04 de Agosto de 2018, 17:42</p>
+						<h2><a href="">Mi tercer post</a></h2>
+						<p> el tercero tambien funciona! </p>
+					</div>	
 				</div>
 			</div>
 		</div>
 
-
-		<div class= "post">
-			<p>publicado el 04 de Agosto de 2018, 17:42</p>
-			<h2><a href="">Mi tercer post</a></h2>
-			<p> el tercero tambien funciona! </p>
-		</div>
 	</body>
 </html>
