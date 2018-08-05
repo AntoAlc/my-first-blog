@@ -4,7 +4,7 @@ font-family: 'Lobster';
 }
 
 h2 a {
-color: #B32973;
+color: #581845 ;
 font-family: 'Do Hyeon', sans-serif;
 }
 
@@ -26,14 +26,17 @@ text-decoration: none;
 }
 .content {
 margin-left: 15px;
+color: #C70039;
 background-color: #ffffff;
+font-family: 'Dosis', sans-serif;
+
 }
 h1, h2, h3, h4 {
 font-family: 'Lobster', cursive;
 }
 .date {
 float: right;
-color: #005050;
+color: #5D6D7E;
 }
 .save {
 float: right;
